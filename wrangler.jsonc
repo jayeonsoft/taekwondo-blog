@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "taekwondo-blog",
+  "compatibility_date": "2026-09-22",
+  // Pure static site: no Worker script, just the Astro build output served as assets.
+  "assets": {
+    "directory": "dist",
+    "not_found_handling": "404-page"
+  },
+  "routes": [{ "pattern": "blog.taekwondo.jayeonsoft.com", "custom_domain": true }],
+  "workers_dev": false,
+  // Required by Cloudflare Workers Builds' `npx wrangler preview` deploy step on PR/preview branches.
+  "previews": {}
+}

@@ -1,0 +1,29 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>Seoul Nights Devlog</h1>
+			<p>
+				<a href="https://taekwondo.jayeonsoft.com">Seoul Nights</a> is a browser 3D taekwondo action
+				game — train at a neon-lit Seoul dojang, earn belts, and take on a street gang pressuring
+				local shops. No installs, guest play included.
+			</p>
+			<p>
+				This is where new chapters, moves, and systems get written up as they ship. Start with the
+				<a href="/blog">devlog</a>, or read <a href="/about">more about the project</a>.
+			</p>
+		</main>
+		<Footer />
+	</body>
+</html>
