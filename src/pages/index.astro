@@ -14,9 +14,9 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 		<Header />
 		<section class="hero">
 			<svg class="hero-arcs" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-				<circle cx="260" cy="1000" r="760" fill="none" stroke="rgba(255, 31, 75, 0.28)" stroke-width="1.5" />
-				<circle cx="1360" cy="1040" r="820" fill="none" stroke="rgba(47, 107, 255, 0.26)" stroke-width="1.5" />
-				<circle cx="800" cy="1080" r="600" fill="none" stroke="rgba(255, 31, 75, 0.14)" stroke-width="1" />
+				<circle cx="260" cy="1000" r="760" fill="none" stroke="rgba(255, 31, 75, 0.3)" stroke-width="1.5" />
+				<circle cx="1360" cy="1040" r="820" fill="none" stroke="rgba(47, 107, 255, 0.28)" stroke-width="1.5" />
+				<circle cx="800" cy="1080" r="600" fill="none" stroke="rgba(255, 31, 75, 0.16)" stroke-width="1" />
 			</svg>
 			<h1 class="hero-title">
 				<span class="sans">
@@ -82,11 +82,9 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 	}
 	.hero-title .accent-red {
 		color: var(--accent);
-		text-shadow: 0 0 28px var(--accent-soft);
 	}
 	.hero-title .accent-blue {
 		color: var(--accent-blue);
-		text-shadow: 0 0 28px var(--accent-blue-soft);
 	}
 	.hero-sub {
 		max-width: 34em;
@@ -101,17 +99,16 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 		padding: 0.9em 1.7em;
 		border-radius: 999px;
 		background: var(--accent);
-		color: var(--void);
+		color: var(--on-accent);
 		font-weight: 700;
 		text-decoration: none;
-		box-shadow: 0 0 30px var(--accent-soft);
+		box-shadow: 0 10px 30px rgba(255, 31, 75, 0.28);
 		transition: transform 0.2s ease, box-shadow 0.2s ease;
 	}
 	.hero-cta:hover {
-		color: var(--void);
+		color: var(--on-accent);
 		transform: translateY(-2px);
-		box-shadow: 0 0 44px var(--accent-soft);
-		text-shadow: none;
+		box-shadow: 0 14px 36px rgba(255, 31, 75, 0.34);
 	}
 	@media (max-width: 720px) {
 		.hero {
