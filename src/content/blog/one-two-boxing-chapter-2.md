@@ -2,6 +2,7 @@
 title: 'One-Two Boxing becomes a whole second chapter'
 description: 'How a side mockup grew into a full second chapter with its own gym, rank ladder, moveset and story beat.'
 pubDate: 'Oct 12 2026'
+heroImage: '../../assets/blog/boxing-gym.png'
 ---
 
 The Gangnam district was always meant to be the hardest fight in the game — a champion boss with roughly a million HP who one-shots careless players. Losing to him used to just mean "try again." Now it means something else: a cutscene, a memory-loss beat, and a hard cut into a second chapter, *One-Two Boxing*, that didn't exist a few builds ago.

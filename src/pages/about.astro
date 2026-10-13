@@ -1,8 +1,14 @@
 ---
 import Layout from '../layouts/BlogPost.astro';
+import titleScreen from '../assets/blog/title-screen.png';
 ---
 
-<Layout title="About" description="About this devlog and Seoul Nights" pubDate={new Date('Oct 12 2026')}>
+<Layout
+	title="About"
+	description="About this devlog and Seoul Nights"
+	pubDate={new Date('Oct 12 2026')}
+	heroImage={titleScreen}
+>
 	<p>
 		This is the devlog for <strong>Seoul Nights</strong>, a browser 3D taekwondo action game: train
 		at a small dojang in a neon Seoul alley district, earn belts, and take on a street gang
