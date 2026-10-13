@@ -2,6 +2,7 @@
 title: 'Guest-first Google Sign-In: cloud saves without a login wall'
 description: "Why sign-in had to stay optional, and how the save-conflict prompt works when two devices disagree."
 pubDate: 'Oct 12 2026'
+heroImage: '../../assets/blog/belt-progress.png'
 ---
 
 Seoul Nights just got cloud saves, and the thing I was most careful about was *not* making that feel like a login wall. The game has always worked fully as a guest — no account, no email, just play — and that had to keep being true after shipping sign-in, not become true "unless you want your progress backed up."

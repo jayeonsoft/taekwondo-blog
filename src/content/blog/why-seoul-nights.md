@@ -2,6 +2,7 @@
 title: 'Why Seoul Nights'
 description: 'What this game is and why it exists: a browser taekwondo action game set in a neon Seoul alley district.'
 pubDate: 'Oct 12 2026'
+heroImage: '../../assets/blog/street-brawl.png'
 ---
 
 Seoul Nights is a browser 3D action-adventure about a taekwondo student at a small dojang in a neon Seoul alley district — Hongdae/Itaewon vibes, hangul neon signs, pojangmacha tents, rain-wet asphalt. A street crew, the Dragon Gang, is leaning on local shops. You train, earn belts, and clean up the streets with taekwondo.
