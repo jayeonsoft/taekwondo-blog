@@ -30,8 +30,10 @@ const { title, description, image } = Astro.props;
 	href={new URL('rss.xml', Astro.site)}
 />
 <meta name="generator" content={Astro.generator} />
+<meta name="theme-color" content="#0b0710" />
 
 <Font cssVariable="--font-atkinson" preload />
+<Font cssVariable="--font-display" preload />
 
 <!-- Canonical URL -->
 <link rel="canonical" href={canonicalURL} />
