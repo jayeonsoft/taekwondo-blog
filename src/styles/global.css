@@ -1,5 +1,6 @@
 /*
-  Moody neon theme for the Seoul Nights devlog — dark, warm, glowing,
+  "Seoul // Night" theme for the devlog — the game's own title-screen
+  palette (void black + the red/blue neon duo from src/style.css),
   pairing a display serif (headings) with Atkinson (body copy).
   Layout is still based on Bear Blog's default CSS structure.
   https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
@@ -7,16 +8,21 @@
  */
 
 :root {
-	--accent: #ff3d7f;
-	--accent-dark: #b8185a;
-	--accent-soft: rgba(255, 61, 127, 0.35);
-	--black: 247, 235, 232;
-	--gray: 189, 150, 163;
-	--gray-light: 58, 30, 48;
-	--gray-dark: 220, 203, 203;
-	--gray-gradient: rgba(94, 20, 62, 48%), #0b0710;
+	--void: #05060f;
+	--accent: #ff1f4b;
+	--accent-dark: #b4123a;
+	--accent-hi: #ff6b86;
+	--accent-soft: rgba(255, 31, 75, 0.35);
+	--accent-blue: #2f6bff;
+	--accent-blue-soft: rgba(47, 107, 255, 0.35);
+	--black: 240, 242, 252;
+	--gray: 154, 163, 201;
+	--gray-light: 20, 24, 48;
+	--gray-dark: 214, 218, 235;
+	--gray-gradient:
+		rgba(255, 31, 75, 14%), rgba(47, 107, 255, 10%) 45%, var(--void) 80%;
 	--box-shadow:
-		0 2px 20px rgba(255, 61, 127, 16%), 0 8px 40px rgba(255, 61, 127, 10%),
+		0 2px 20px rgba(255, 31, 75, 16%), 0 8px 40px rgba(47, 107, 255, 12%),
 		0 24px 60px rgba(0, 0, 0, 55%);
 }
 body {
@@ -24,10 +30,10 @@ body {
 	margin: 0;
 	padding: 0;
 	text-align: left;
-	background-color: #0b0710;
-	background-image: linear-gradient(var(--gray-gradient));
+	background-color: var(--void);
+	background-image: linear-gradient(180deg, var(--gray-gradient));
 	background-repeat: no-repeat;
-	background-size: 100% 600px;
+	background-size: 100% 700px;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	color: rgb(var(--gray-dark));
@@ -77,7 +83,7 @@ a {
 	text-decoration-color: var(--accent-soft);
 }
 a:hover {
-	color: #ff9ebe;
+	color: var(--accent-hi);
 	text-shadow: 0 0 12px var(--accent-soft);
 }
 p {
@@ -129,7 +135,7 @@ hr {
 }
 ::selection {
 	background: var(--accent);
-	color: #0b0710;
+	color: var(--void);
 }
 @media (max-width: 720px) {
 	body {

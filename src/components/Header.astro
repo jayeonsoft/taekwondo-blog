@@ -25,10 +25,10 @@ import HeaderLink from './HeaderLink.astro';
 		z-index: 10;
 		margin: 0;
 		padding: 0 1em;
-		background: rgba(11, 7, 16, 0.78);
+		background: rgba(5, 6, 15, 0.78);
 		backdrop-filter: blur(14px);
 		-webkit-backdrop-filter: blur(14px);
-		border-bottom: 1px solid rgba(255, 61, 127, 0.18);
+		border-bottom: 1px solid rgba(47, 107, 255, 0.22);
 	}
 	h2 {
 		margin: 0;
@@ -67,13 +67,22 @@ import HeaderLink from './HeaderLink.astro';
 		border-bottom-color: var(--accent);
 	}
 	.social-links a {
-		font-weight: bold;
+		display: inline-flex;
+		align-items: center;
+		font-weight: 600;
 		text-transform: none;
 		letter-spacing: normal;
 		color: var(--accent);
+		padding: 0.5em 1.1em;
+		border-radius: 999px;
+		border: 1px solid rgba(255, 31, 75, 0.4);
+		background: rgba(255, 31, 75, 0.1);
+		transition: color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
 	}
 	.social-links a:hover {
-		color: #ff9ebe;
+		color: var(--void);
+		background: var(--accent);
+		box-shadow: 0 0 24px var(--accent-soft);
 	}
 	@media (max-width: 720px) {
 		.social-links {
