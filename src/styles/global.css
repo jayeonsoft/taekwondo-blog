@@ -1,36 +1,37 @@
 /*
-  "Seoul // Night" theme for the devlog — the game's own title-screen
-  palette (void black + the red/blue neon duo from src/style.css),
-  pairing a display serif (headings) with Atkinson (body copy).
+  "Seoul // Night" theme for the devlog — a bright page carrying the
+  game's own title-screen red/blue neon duo (src/style.css) as color
+  accents, pairing a display serif (headings) with Atkinson (body copy).
   Layout is still based on Bear Blog's default CSS structure.
   https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
 
 :root {
-	--void: #05060f;
+	--bg: #fdfbfa;
 	--accent: #ff1f4b;
 	--accent-dark: #b4123a;
-	--accent-hi: #ff6b86;
-	--accent-soft: rgba(255, 31, 75, 0.35);
+	--accent-hi: #d4123f;
+	--accent-soft: rgba(255, 31, 75, 0.2);
 	--accent-blue: #2f6bff;
-	--accent-blue-soft: rgba(47, 107, 255, 0.35);
-	--black: 240, 242, 252;
-	--gray: 154, 163, 201;
-	--gray-light: 20, 24, 48;
-	--gray-dark: 214, 218, 235;
+	--accent-blue-soft: rgba(47, 107, 255, 0.2);
+	--on-accent: #ffffff;
+	--black: 24, 22, 38;
+	--gray: 112, 112, 138;
+	--gray-light: 234, 230, 236;
+	--gray-dark: 46, 44, 64;
 	--gray-gradient:
-		rgba(255, 31, 75, 14%), rgba(47, 107, 255, 10%) 45%, var(--void) 80%;
+		rgba(255, 31, 75, 7%), rgba(47, 107, 255, 6%) 45%, var(--bg) 80%;
 	--box-shadow:
-		0 2px 20px rgba(255, 31, 75, 16%), 0 8px 40px rgba(47, 107, 255, 12%),
-		0 24px 60px rgba(0, 0, 0, 55%);
+		0 2px 16px rgba(24, 22, 38, 6%), 0 10px 30px rgba(255, 31, 75, 10%),
+		0 20px 50px rgba(47, 107, 255, 8%);
 }
 body {
 	font-family: var(--font-atkinson);
 	margin: 0;
 	padding: 0;
 	text-align: left;
-	background-color: var(--void);
+	background-color: var(--bg);
 	background-image: linear-gradient(180deg, var(--gray-gradient));
 	background-repeat: no-repeat;
 	background-size: 100% 700px;
@@ -84,7 +85,6 @@ a {
 }
 a:hover {
 	color: var(--accent-hi);
-	text-shadow: 0 0 12px var(--accent-soft);
 }
 p {
 	margin-bottom: 1em;
@@ -135,7 +135,7 @@ hr {
 }
 ::selection {
 	background: var(--accent);
-	color: var(--void);
+	color: var(--on-accent);
 }
 @media (max-width: 720px) {
 	body {
