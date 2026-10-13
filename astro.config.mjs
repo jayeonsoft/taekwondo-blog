@@ -31,5 +31,13 @@ export default defineConfig({
 				],
 			},
 		},
+		{
+			provider: fontProviders.google(),
+			name: 'Playfair Display',
+			cssVariable: '--font-display',
+			weights: [500, 600, 700],
+			styles: ['normal', 'italic'],
+			fallbacks: ['Georgia', 'serif'],
+		},
 	],
 });
